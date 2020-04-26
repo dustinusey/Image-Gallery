@@ -1,0 +1,26 @@
+.image-container {
+	@include flex($col, nowrap, $fs);
+	align-items: center;
+	box-sizing: border-box;
+	@include size(100%, 100%);
+	margin: auto;
+	position: relative;
+}
+.full-image {
+	margin: auto;
+	width: 1%;
+	transition: .9s;
+	border: 2px solid white;
+	border-radius: 3px;
+}
+.full-image-filter {
+	margin: auto;
+	width: 100%;
+	border: 2px solid white;
+	border-radius: 3px;
+	opacity: 0;
+}
+.largeSize {
+	width: 70%;
+	height: auto;
+}

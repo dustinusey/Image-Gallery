@@ -1,0 +1,42 @@
+.overlay {
+	@include absoluteCenter;
+	position: fixed;
+	@include size(100vh, 100%);
+	@include flex($col, nowrap, $fs);
+	opacity: 0;
+	pointer-events: none;
+	transition: .7s;
+	background: rgba(39, 42, 53, 0.932);
+}
+
+.show-overlay {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.fa-times {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+}
+.fa-arrow-right,
+.fa-arrow-left {
+	@include absoluteCenter;
+	color: white;
+	font-size: 25px;
+	cursor: pointer;
+}
+.fa-arrow-right {
+	left: 95%;
+}
+.fa-arrow-left {
+	left: 5%;
+}
+
+.disabledArrow {
+	opacity: .1;
+	pointer-events: none;
+}

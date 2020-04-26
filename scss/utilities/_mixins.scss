@@ -1,0 +1,22 @@
+@mixin size($height, $width) {
+	@content;
+	height: $height;
+	width: $width;
+}
+
+@mixin flex($direction, $wrapping, $justify) {
+	@content;
+	display: flex;
+	flex-direction: $direction;
+	flex-wrap: $wrapping;
+	justify-content: $justify;
+}
+
+@mixin absoluteCenter {
+	@content;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+

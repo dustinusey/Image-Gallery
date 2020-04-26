@@ -1,0 +1,15 @@
+.gallery-container {
+	width: 80%;
+	max-width: 1400px;
+	margin: auto;
+	box-sizing: border-box;
+	@include flex($row, wrap, $se);
+		& img {
+			cursor: pointer;
+			width: 24%;
+			min-width: 250px;
+			max-width: 300px;
+			margin: 10px 5px;
+			border-radius: 3px;
+		}
+}

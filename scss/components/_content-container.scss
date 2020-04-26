@@ -1,0 +1,5 @@
+.content-container {
+	@include flex($col, wrap, $center);
+	
+	margin: auto;
+}
